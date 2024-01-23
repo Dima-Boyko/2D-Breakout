@@ -1,0 +1,108 @@
+body{
+	padding: 0px;
+	margin: 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	//background: #041861;
+	background: linear-gradient(to top, #06adec, #090979);
+	font-family: 'COMIC SANS MS';
+}
+.Breakout-field{
+	width: 670px;
+	height: 400px;
+
+	border: solid 2px #e0f97c;
+	position: relative;
+	background: #000;
+	box-shadow: 5px  5px 5px rgba(255,255,255,0.2); 
+
+}
+.target{
+	width: 100px;
+	height: 20px;
+	/*background: linear-gradient(to top, #06adec, #c2e0ec);*/
+	position: absolute;
+}
+/*.target:nth-child(odd){
+	background: linear-gradient(to top, #ff0000, #e6d4d4);
+}*/
+.target.color-1{
+	background: linear-gradient(to top, #06adec, #c2e0ec);
+}
+.target.color-2{
+	background: linear-gradient(to top, #ff0000, #e6d4d4);
+}
+.target.color-3{
+	background: linear-gradient(to top, #24dc21, #d5d6d5);
+}
+.target.color-4{
+	background: linear-gradient(to top, #fbe805, #d4d4d3);
+}
+.ball{
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	background: linear-gradient(to top, #ec930c, #ffffff);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+.platform{
+	width: 100px;
+	height: 20px;
+	border-top: solid 1px #ff0;
+	background: linear-gradient(to top, #022705, #5aec79);
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	/*border-radius: 10px;*/
+	border-radius: 0px 0px 15px 15px;
+}
+#alert{
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	background: #2196f3;
+	height: 60px;
+	line-height: 60px;
+	margin-top: -30px;
+	
+	font-size: 20px;
+	font-weight: bold;
+}
+#Level{
+	position: fixed;
+	bottom: 0px;
+	left: 50%;
+	margin-left: -100px;
+	width: 200px;
+	height: 25px;
+	line-height: 25px;
+	color: #fff;
+	text-align: center;
+	font-size: 16px;
+	background: linear-gradient(to top, #089613, #5aec79);
+	border-radius: 20px 20px 0px 0px;
+}
+
+
+
+#sound{
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+#sound svg{
+	width: 18px;
+	height: 18px;
+	fill: #e8e7e7;
+}#sound.off svg{
+	fill: #b98282;
+}
